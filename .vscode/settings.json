@@ -1,0 +1,16 @@
+{
+  // 将仓库内的 schema 关联到特定 JSON 文件
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/DB/Stditems/药水.json",
+        "DB/Stditems/药水.json",
+        "**/DB/Stditems/药水.json",
+        "/DB/Stditems/药水*.json",
+        "DB/Stditems/药水*.json",
+        "**/DB/Stditems/药水*.json"
+      ],
+      "url": "./schemas/stditems-potion.schema.json"
+    }
+  ]
+}

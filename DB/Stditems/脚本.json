@@ -1,0 +1,37 @@
+[
+    {
+        "name": "随机传送石",
+        "looks": 1025,
+        "duraMax": 50
+    },
+    {
+        "name": "回城石",
+        "looks": 1024,
+        "duraMax": 50
+    },
+    {
+        "name": "记忆石",
+        "looks": 1536,
+        "duraMax": 10
+    },
+    {
+        "name": "个性发型",
+        "looks": 1013,
+        "duraMax": 0
+    },
+    {
+        "name": "金条",
+        "looks": 117,
+        "duraMax": 0
+    },
+    {
+        "name": "金砖",
+        "looks": 121,
+        "duraMax": 0
+    },
+    {
+        "name": "金盒",
+        "looks": 122,
+        "duraMax": 0
+    }
+]
