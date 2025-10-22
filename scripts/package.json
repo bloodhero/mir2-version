@@ -1,0 +1,16 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "此脚本用于将 `DB/Stditems/药水.json` 导入到指定的 SQLite 数据库表 `StdItems`。",
+  "main": "create_db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "minimist": "^1.2.8"
+  }
+}

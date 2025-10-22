@@ -3,12 +3,13 @@
   "json.schemas": [
     {
       "fileMatch": [
-        "/DB/Stditems/药水.json",
-        "DB/Stditems/药水.json",
-        "**/DB/Stditems/药水.json",
-        "/DB/Stditems/药水*.json",
-        "DB/Stditems/药水*.json",
-        "**/DB/Stditems/药水*.json"
+        "/DB/Stditems/*.json"
+      ],
+      "url": "./schemas/stditems.schema.json"
+    },
+    {
+      "fileMatch": [
+        "/DB/Stditems/药水*.json"
       ],
       "url": "./schemas/stditems-potion.schema.json"
     }

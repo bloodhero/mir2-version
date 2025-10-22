@@ -1,78 +1,70 @@
 [
     {
+        "idx": 1,
         "name": "强效金创药",
-        "type": "hp",
-        "heal": {
-            "hp": 90
-        },
+        "stdmode": 2,
+        "hp": 90,
         "looks": 28,
-        "stack": 5000
+        "duraMax": 5000
     },
     {
+        "idx": 2,
         "name": "强效魔法药",
-        "type": "mp",
-        "heal": {
-            "mp": 150
-        },
+        "stdmode": 2,
+        "mp": 180,
         "looks": 29,
-        "stack": 5000
+        "duraMax": 5000
     },
     {
+        "idx": 3,
         "name": "超级红药",
-        "type": "hp",
-        "heal": {
-            "hp": 130
-        },
+        "stdmode": 2,
+        "hp": 130,
         "looks": 813,
-        "stack": 5000
+        "duraMax": 5000
     },
     {
+        "idx": 4,
         "name": "超级蓝药",
-        "type": "mp",
-        "heal": {
-            "mp": 200
-        },
+        "stdmode": 2,
+        "mp": 200,
         "looks": 814,
-        "stack": 5000
+        "duraMax": 5000
     },
     {
+        "idx": 5,
         "name": "强效太阳水",
-        "type": "hmp",
-        "heal": {
-            "hp": 50,
-            "mp": 80
-        },
+        "stdmode": 2,
+        "hp": 50,
+        "mp": 80,
         "looks": 312,
-        "stack": 5000
+        "duraMax": 5000
     },
     {
+        "idx": 6,
         "name": "万年雪霜",
-        "type": "hmp",
-        "heal": {
-            "hp": 100,
-            "mp": 160
-        },
+        "stdmode": 2,
+        "hp": 100,
+        "mp": 160,
         "looks": 260,
-        "stack": 5000
+        "duraMax": 5000
     },
     {
+        "idx": 7,
         "name": "疗伤药",
-        "type": "hmp",
-        "heal": {
-            "hp": 250,
-            "mp": 380
-        },
+        "stdmode": 2,
+        "hp": 250,
+        "mp": 380,
         "looks": 14,
-        "stack": 5000
+        "duraMax": 5000
     },
     {
+        "idx": 8,
         "name": "滋补鸡汤",
-        "type": "hmp",
-        "heal": {
-            "hp": 500,
-            "mp": 750
-        },
+        "stdmode": 2,
+        "hp": 500,
+        "mp": 750,
         "looks": 794,
-        "stack": 5000
+        "duraMax": 5000
     }
 ]

@@ -1,71 +1,21 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://example.com/mir2/stditems-potion.schema.json",
-    "title": "Mir2 标准物品-药水 清单",
-    "description": "约束 DB/Stditems/药水*.json 的结构与字段，提供校验与补全。",
-    "type": "array",
-    "minItems": 0,
-    "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-            "id",
-            "name",
-            "type"
-        ],
-        "properties": {
-            "name": {
-                "type": "string",
-                "minLength": 1,
-                "description": "物品名称（例如：小红药）。"
-            },
-            "type": {
-                "type": "string",
-                "enum": [
-                    "hp",
-                    "mp",
-                    "hmp"
-                ],
-                "description": "药水类型。hp=生命，mp=法力，hmp=混合（同时回血回蓝）。"
-            },
-            "heal": {
-                "type": "object",
-                "description": "回复或增益数值。不同类型的药水对应不同字段。",
-                "additionalProperties": false,
-                "properties": {
-                    "hp": {
-                        "type": "integer",
-                        "minimum": 0,
-                        "description": "回复生命值。"
-                    },
-                    "mp": {
-                        "type": "integer",
-                        "minimum": 0,
-                        "description": "回复法力值。"
-                    }
-                }
-            },
-            "stack": {
-                "type": "integer",
-                "minimum": 1,
-                "description": "可堆叠数量上限（来自 DuraMax；必须 > 1 才表示可叠加，例如 DuraMax=100 表示最多叠 100 个）。不填或=1 视为不可叠加。"
-            },
-            "looks": {
-                "type": "integer",
-                "description": "外观 ID，参考 StdItemLook.txt。"
-            }
-        }
-    },
-    "examples": [
-        [
-            {
-                "name": "小红药",
-                "type": "hp",
-                "heal": {
-                    "hp": 50
-                },
-                "stack": 10
-            }
-        ]
-    ]
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/mir2/stditems-potion.schema.json",
+	"title": "Mir2 标准物品-药水 清单（合并通用约束）",
+	"description": "药水物品的 schema；通过 allOf 同时应用通用 StdItems schema 与药水专有约束（stdmode=2）。",
+	"type": "array",
+	"minItems": 0,
+	"items": {
+		"type": "object",
+		"additionalProperties": true,
+		"required": ["stdmode"],
+		"properties": {
+			"stdmode": { "type": "integer", "enum": [2, 3], "description": "Stdmode 必须为 2 或 3（药水类标识）。" }
+		}
+	},
+	"examples": [
+		[
+			{ "id": 1, "name": "小红药", "type": "hp", "stdmode": 2, "heal": { "hp": 50 }, "stack": 10 }
+		]
+	]
 }
